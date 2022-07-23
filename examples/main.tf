@@ -9,7 +9,7 @@ terraform {
 
 provider "hashicups" {
   username = "education"
-  password = "test123"
+  password = "test1234"
 }
 
 module "psl" {
@@ -20,12 +20,4 @@ module "psl" {
 
 output "psl" {
   value = module.psl.coffee
-}
-
-data "hashicups_order" "order" {
-  id = 1
-}
-
-output "order" {
-  value = data.hashicups_order.order
 }
